@@ -1,0 +1,163 @@
+html,body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eee;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    margin: 20px auto 40px auto;
+    h1{
+        font-weight: 500;
+        font-size: 2.5em;
+        margin: 0;
+        padding: 5px;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid #eee;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 1em;
+}
+
+main {
+    .container{
+        max-width: 1300px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 35px;
+        margin: 0 auto;
+        @media(max-width: 800px){
+            grid-template-columns: 1fr;
+        }
+
+        .left-column{
+            .post{
+                margin-bottom: 40px;
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+
+                .thumbnail{
+                    width: 100%;
+                }
+                .post-preview{
+                    padding: 20px;
+                    background-color: white;
+
+                    div.extras{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            border: none;
+                            font-weight: 600;
+                            padding-right: 5px;
+                        }
+                        .count{
+                            border-radius: 10px;
+                            color: white;
+                           
+                            background-color: black;
+                            font-size: 0.75em;
+                            padding: 5px;
+
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .right-column{
+            .profile, aside{
+                background-color: white;
+                margin-bottom: 40px;
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+            }
+            .profile{
+                .profile-thumbnail{
+                    width: 100%;
+                }
+                .profile-info{
+                    padding: 15px;
+                    background-color: white;
+                    h2{
+                        margin-top:0 ;
+                    }
+                }
+            }
+            .header{
+                padding:15px;
+                h2{
+                    margin: 0;
+                    font-weight: 350;
+                }
+                background-color: #eee;
+            }
+            .content{
+                background-color: white;
+                .content-item{
+                    display: flex;
+                    gap: 15px;
+                    padding: 10px 20px;
+                    align-items: center;
+                    h3{
+                        margin: 0;;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                    .img{
+                        width: 70px;
+                        img{
+                         width: 100%;
+
+                        }
+                    }
+                }
+            }
+            .tags{
+                padding: 20px;
+                span{
+                    background-color: #eee;
+                    display: inline-block;
+                    padding: 2px 5px;
+                    margin: 5px 5px 5px 0;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    padding: 30px;
+    background-color: #444;
+    margin: 0;
+    color: white;
+    button{
+        margin-right: 20px;
+
+    }
+}
